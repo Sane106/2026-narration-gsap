@@ -1,0 +1,63 @@
+/*Bases -------------------------------- */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+/* Variables ------------------------------ */
+
+
+
+/*Typographies */
+
+h1{
+    font-size: 300;
+}
+
+
+
+
+
+
+
+
+/*Design du site  */
+#section1{
+    flex-direction: column;
+}
+
+
+.h100{
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-light{
+    background-color: white;
+}
+
+.bg-dark{
+    background-color: rgb(181, 105, 105);
+}
+
+.block{
+      background-color: oklch(67.752% 0.03986 347.439);
+      width: 200px;
+      height: 200px;
+}
+
+.block img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+#movingBlock2 {
+    background-color: pink;
+}
+
