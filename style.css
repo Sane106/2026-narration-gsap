@@ -13,8 +13,230 @@
 /*Typographies */
 
 h1{
-    font-size: 300;
+    font-size: 100px;
 }
+
+.slogan {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+:root {
+    --rose-adopt: #ffb7c5;      /* Un rose doux et iconique de la marque */
+    --rose-clair: #fff0f5;      /* Un fond rose très pâle et lumineux */
+    --texte-principal: #2b2b2b; /* Un gris foncé élégant pour le texte (plus doux que le noir pur) */
+    --blanc: #ffffff;
+}
+.bg-light {
+    background-color: #fff0f5;
+}
+#movingBlock2.block #section2 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    /* Intégration de ton image d'arrière-plan avec un voile léger pour la lisibilité */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/images/universadopt.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}#section2 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    /* Intégration de ton image d'arrière-plan avec un voile léger pour la lisibilité */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/images/universadopt.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#section2 h2 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+#section2 p {
+    font-size: 1.2rem;
+    color: #fce4ec;
+}
+
+#section2 h2 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+#section2 p {
+    font-size: 1.2rem;
+    color: #fce4ec;
+}
+   
+
+
+#movingBlock2.block img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+#movingBlock2.block {
+    height: auto !important;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product-info {
+    margin-bottom: 15px;
+}
+
+.product-info h3 {
+    font-size: 1.1rem;
+    color: #2b2b2b;
+    margin-bottom: 8px;
+}
+
+.product-info p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+/* --- Mise en page de la Section 4 (Drag and Drop) --- */
+#section4 .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Espace entre le sac et le parfum */
+    position: relative;
+}
+
+/* Style de la zone du sac */
+#shoppingBag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 2px dashed #333; /* La bordure pointillée */
+    border-radius: 10px;
+}
+
+/* Taille de l'image du sac */
+#shoppingBag img {
+    width: 120px; /* Ajuste la taille selon ton envie */
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Style du parfum à glisser */
+#section4 .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    position: relative;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+#shoppingBag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    border: none;
+}
+
+#shoppingBag img {
+    width: 120px;
+    height: auto;
+}
+
+#dragItem {
+    cursor: grab;
+    width: 140px; /* Taille idéale bien visible */
+    z-index: 10;
+    animation: apparition 1s ease-out; /* Animation d'apparition */
+}
+
+#dragItem img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#dragItem:active {
+    cursor: grabbing;
+}
+
+/* Animation douce du parfum à l'affichage */
+@keyframes apparition {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#section1 {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Style et animation des papillons */
+.butterfly {
+    position: absolute;
+    font-size: 35px;
+    animation: fly 6s infinite ease-in-out;
+    opacity: 0.9;
+    z-index: 10;
+}
+
+.b1 { top: 25%; left: 20%; animation-delay: 0s; }
+.b2 { top: 65%; left: 75%; animation-delay: 2s; }
+.b3 { top: 35%; left: 80%; animation-delay: 4s; }
+
+@keyframes fly {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(30px, -40px) rotate(15deg) scale(1.1); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -59,5 +281,155 @@ h1{
 
 #movingBlock2 {
     background-color: pink;
+    width: 250px;
+
 }
 
+#section1 {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    /* Image de fond pour la section 1 avec un léger voile pour la lisibilité */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('assets/images/illustration.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#section3 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    /* Arrière-plan avec ton image fleur.jpeg */
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), 
+        url('assets/images/fleur.jpeg');
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;}
+    /* Style de la Section 3 en plein écran */
+#section3 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('assets/images/fleur.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Conteneur global */
+.drop-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Texte */
+.drop-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Conteneur des parfums côte à côte */
+.perfumes-container {
+    display: flex;
+    gap: 15px;
+}
+
+/* Style des blocs de parfums (sans fond blanc) */
+.block {
+    width: 90px;
+    min-height: 90px;
+    background: transparent;
+    border-radius: 12px;
+    cursor: grab;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.perfume-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+/* Effet quand on attrape le parfum */
+#movingBlock3.dragging {
+    transform: scale(1.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    cursor: grabbing;
+}
+
+/* Zone du sac de shopping */
+.shopping-bag-zone {
+    width: 130px;
+    height: 130px;
+    border: 2px dashed rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.bag-img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+}
+/* Style du texte des notes olfactives sous chaque parfum */
+.perfume-notes {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #9e5353;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    white-space: nowrap;}
+    #section3 .block .perfume-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    pointer-events: none;
+    /* mix-blend-mode: multiply; -> Enlève  */
+}
+
+
+  
+    
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  

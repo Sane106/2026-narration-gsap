@@ -14,7 +14,11 @@ gsap.from("#movingBlock1",{
 })
 
 /* Animation deuxieme block ------------------ */
-gsap.from("#movingBlock2",{
+gsap.from("#movingBlock2",
+    
+
+    {
+        
     scrollTrigger:{
         trigger:"#section2",
         start:"top 50%",
@@ -44,7 +48,7 @@ tl.to("#movingBlock3",{x:100,})
 
 /*Animation troisieme bloc--- Draggable------------*/
 
-Draggable.create("#movingBlock4",{
+Draggable.create(".deplace",{
    // type:"x",
    //type:"rotation",
    inertia:"true",
